@@ -20,13 +20,52 @@ def create_weekly_archive():
     archive_dir = "/data/workspace/papers-weekly-site/archives"
     os.makedirs(archive_dir, exist_ok=True)
     
-    # 读取所有论文数据 (使用修复后的数据源)
-    data_file = '/data/workspace/papers_data_fixed.json'
-    if not os.path.exists(data_file):
-        data_file = '/data/workspace/papers_data.json'
+    # 读取所有论文数据
+    all_papers = []
     
-    with open(data_file, 'r', encoding='utf-8') as f:
-        all_papers = json.load(f)
+    # 1. 读取arXiv论文 (all_papers.json - 105篇)
+    arxiv_file = '/data/workspace/all_papers.json'
+    if os.path.exists(arxiv_file):
+        with open(arxiv_file, 'r', encoding='utf-8') as f:
+            arxiv_papers = json.load(f)
+            all_papers.extend(arxiv_papers)
+            print(f"📄 读取arXiv论文: {len(arxiv_papers)} 篇")
+    
+    # 2. 读取HuggingFace论文
+    hf_files = [
+        '/data/workspace/huggingface_papers_2026-W06.json',
+        '/data/workspace/papers-weekly-site/huggingface_2026-W06.json',
+        '/data/workspace/huggingface_papers.json'
+    ]
+    
+    for hf_file in hf_files:
+        if os.path.exists(hf_file):
+            with open(hf_file, 'r', encoding='utf-8') as f:
+                hf_data = json.load(f)
+                # HuggingFace数据可能是dict with papers字段，或直接是list
+                if isinstance(hf_data, dict) and 'papers' in hf_data:
+                    hf_papers = hf_data['papers']
+                elif isinstance(hf_data, list):
+                    hf_papers = hf_data
+                else:
+                    hf_papers = []
+                
+                if hf_papers:
+                    all_papers.extend(hf_papers)
+                    print(f"🤗 读取HuggingFace论文: {len(hf_papers)} 篇")
+                    break
+            break
+    
+    # 去重（基于arxiv_id或url）
+    seen = set()
+    unique_papers = []
+    for paper in all_papers:
+        key = paper.get('arxiv_id') or paper.get('url') or paper.get('title')
+        if key not in seen:
+            seen.add(key)
+            unique_papers.append(paper)
+    
+    all_papers = unique_papers
     
     # 确保所有论文都有URL
     import re

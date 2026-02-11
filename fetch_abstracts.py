@@ -61,7 +61,8 @@ def main():
     total = len(archive['papers'])
     success = 0
     failed = 0
-    skipped = 0
+    mapped = 0
+    api_fetched = 0
     
     print(f"📊 总计: {total} 篇论文")
     print()
@@ -69,31 +70,42 @@ def main():
     for i, paper in enumerate(archive['papers'], 1):
         arxiv_id = paper.get('arxiv_id', '')
         title = paper['title'][:50]
+        current_abstract = paper.get('abstract', '').strip()
         
-        # 检查是否已有摘要
-        if paper.get('abstract'):
-            print(f"[{i}/{total}] ⏭️  跳过 (已有摘要): {title}...")
-            skipped += 1
-            continue
+        # 检查是否已有有效摘要（不是占位符）
+        placeholder_keywords = ['待获取', '暂时无法获取', '摘要信息待获取']
+        is_placeholder = any(kw in current_abstract for kw in placeholder_keywords)
         
-        # 检查是否有summary字段（中文摘要）
-        if paper.get('summary'):
-            paper['abstract'] = paper['summary']
-            print(f"[{i}/{total}] ✅ 使用summary字段: {title}...")
+        if current_abstract and not is_placeholder:
+            print(f"[{i}/{total}] ✅ 已有有效摘要: {title}...")
             success += 1
             continue
         
+        # 优先使用summary字段（中文摘要），但要检查是否是占位符
+        summary = paper.get('summary', '').strip()
+        summary_is_placeholder = any(kw in summary for kw in placeholder_keywords)
+        
+        if summary and not summary_is_placeholder:
+            paper['abstract'] = paper['summary']
+            print(f"[{i}/{total}] 📝 映射summary→abstract: {title}...")
+            mapped += 1
+            success += 1
+            continue
+        
+        # 如果没有summary，尝试从arXiv API获取
         if not arxiv_id:
             print(f"[{i}/{total}] ⚠️  缺少arxiv_id: {title}...")
+            paper['abstract'] = "摘要信息暂时无法获取，请点击下方链接查看完整论文"
             failed += 1
             continue
         
         # 从arXiv API获取
-        print(f"[{i}/{total}] 🔍 获取中... {arxiv_id}: {title}...")
+        print(f"[{i}/{total}] 🔍 从API获取... {arxiv_id}: {title}...")
         abstract = fetch_arxiv_abstract(arxiv_id)
         
         if abstract:
             paper['abstract'] = abstract
+            api_fetched += 1
             success += 1
             print(f"         ✅ 成功 ({len(abstract)} 字符)")
         else:
@@ -117,8 +129,9 @@ def main():
     print("✅ 完成！")
     print(f"📊 统计:")
     print(f"  成功: {success} 篇")
+    print(f"    - 映射summary: {mapped} 篇")
+    print(f"    - API获取: {api_fetched} 篇")
     print(f"  失败: {failed} 篇")
-    print(f"  跳过: {skipped} 篇")
     print(f"  总计: {total} 篇")
 
 if __name__ == '__main__':
