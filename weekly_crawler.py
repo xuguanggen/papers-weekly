@@ -20,9 +20,22 @@ def create_weekly_archive():
     archive_dir = "/data/workspace/papers-weekly-site/archives"
     os.makedirs(archive_dir, exist_ok=True)
     
-    # 读取所有论文数据
-    with open('/data/workspace/all_papers.json', 'r', encoding='utf-8') as f:
+    # 读取所有论文数据 (使用修复后的数据源)
+    data_file = '/data/workspace/papers_data_fixed.json'
+    if not os.path.exists(data_file):
+        data_file = '/data/workspace/papers_data.json'
+    
+    with open(data_file, 'r', encoding='utf-8') as f:
         all_papers = json.load(f)
+    
+    # 确保所有论文都有URL
+    import re
+    for paper in all_papers:
+        if not paper.get('url') or paper['url'] == '待获取':
+            arxiv_id = paper.get('arxiv_id', '')
+            if arxiv_id:
+                clean_id = re.sub(r'v\d+$', '', arxiv_id)
+                paper['url'] = f'https://arxiv.org/abs/{clean_id}'
     
     print(f"📚 找到 {len(all_papers)} 篇论文")
     
