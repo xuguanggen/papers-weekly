@@ -169,6 +169,18 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             animation: fadeIn 0.6s ease-out;
+            position: relative;
+        }
+
+        .paper-number {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 32px;
+            font-weight: 700;
+            color: rgba(102, 126, 234, 0.15);
+            line-height: 1;
+            user-select: none;
         }
 
         @keyframes fadeIn {
@@ -388,6 +400,7 @@
 
             grid.innerHTML = papers.map((paper, index) => `
                 <div class="paper" style="animation-delay: ${index * 0.05}s">
+                    <div class="paper-number">#${index + 1}</div>
                     <div class="paper-title">${paper.title}</div>
                     <div class="paper-authors">
                         <strong>👥 作者:</strong> ${paper.authors}
