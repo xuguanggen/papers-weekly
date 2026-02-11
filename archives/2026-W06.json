@@ -1,0 +1,637 @@
+{
+  "date": "2026-02-11",
+  "week": "2026-W06",
+  "count": 105,
+  "papers": [
+    {
+      "arxiv_id": "2602.07085",
+      "title": "QuantaAlpha: An Evolutionary Framework for LLM-Driven Alpha Mining",
+      "authors": "Jun Han, Shuo Zhang, Wei Li 等",
+      "summary": "金融市场充满噪声且非平稳，这使得alpha挖掘对回测结果中的噪声和突发的市场制度转变高度敏感。为应对这一挑战，我们提出了QuantaAlpha，一个专为LLM驱动的alpha挖掘设计的演化框架。"
+    },
+    {
+      "arxiv_id": "2602.08222",
+      "title": "Weak-Driven Learning: How Weak Agents make Strong Agents Stronger",
+      "authors": "Zehao Chen, Gongxun Li, Tianxiang Ai 等",
+      "summary": "随着后训练优化成为改进大型语言模型的核心，我们观察到一个持续的饱和瓶颈。本文介绍了弱驱动学习（WDL），这是一种利用弱智能体加速强智能体改进的范式。"
+    },
+    {
+      "arxiv_id": "2602.08794",
+      "title": "MOVA: Towards Scalable and Synchronized Video-Audio Generation",
+      "authors": "Yuxuan Wang, Ziyang Yuan, Ruiqing Ma 等",
+      "summary": "扩散模型的最新进展显著增强了视频和音频生成的质量。然而，现有的同步视频-音频生成方法在可扩展性、时间对齐和语义一致性方面存在局限性。"
+    },
+    {
+      "arxiv_id": "2602.07026",
+      "title": "Modality Gap-Driven Subspace Alignment Training Paradigm For Multimodal Large Language Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05400",
+      "title": "OPUS: Towards Efficient and Principled Data Selection in Large Language Model Pre-training in Every Iteration",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09856",
+      "title": "Code2World: A GUI World Model via Renderable Code Generation",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09082",
+      "title": "UI-Venus-1.5 Technical Report",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06717",
+      "title": "F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07845",
+      "title": "Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06855",
+      "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06570",
+      "title": "Baichuan-M3: Modeling Clinical Inquiry for Reliable Medical Decision-Making",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05843",
+      "title": "OdysseyArena: Benchmarking Large Language Models For Long-Horizon, Active and Inductive Interactions",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05027",
+      "title": "AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.03392",
+      "title": "On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08676",
+      "title": "LLaDA2.1: Speeding Up Text Diffusion via Token Editing",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08234",
+      "title": "SkillRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08990",
+      "title": "InternAgent-1.5: A Unified Agentic Framework for Long-Horizon Autonomous Scientific Discovery",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07837",
+      "title": "RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06422",
+      "title": "Alleviating Sparse Rewards by Modeling Step-Wise and Long-Term Sampling Effects in Flow-Based GRPO",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.00169",
+      "title": "Towards Agentic Intelligence for Materials Science",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09007",
+      "title": "GEBench: Benchmarking Image Generation Models as GUI Environments",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09443",
+      "title": "P1-VL: Bridging Visual Perception and Scientific Reasoning in Physics Olympiads",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.01734",
+      "title": "MSign: An Optimizer Preventing Training Instability in Large Language Models via Stable Rank Restoration",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2601.18415",
+      "title": "Pisets: A Robust Speech Recognition System for Lectures and Interviews",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08439",
+      "title": "Demo-ICL: In-Context Learning for Procedural Video Knowledge Acquisition",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08321",
+      "title": "Improving Data and Reward Design for Scientific Reasoning in Large Language Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.10090",
+      "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08426",
+      "title": "Prism: Spectral-Aware Block-Sparse Attention",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06949",
+      "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06025",
+      "title": "Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06130",
+      "title": "Self-Improving World Modelling with Latent Actions",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07962",
+      "title": "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.10063",
+      "title": "Chain of Mindset: Reasoning with Adaptive Cognitive Modes",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08543",
+      "title": "GISA: A Benchmark for General Information-Seeking Assistant",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06291",
+      "title": "Judging What We Cannot Solve: A Consequence-Based Approach for Oracle-Free Evaluation of Research-Level Math",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07035",
+      "title": "DLLM-Searcher: Adapting Diffusion Large Language Model for Search Agents",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07274",
+      "title": "TermiGen: High-Fidelity Environment and Robust Trajectory Synthesis for Terminal Agents",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06540",
+      "title": "AgentCPM-Report: Interleaving Drafting and Deepening for Open-Ended Deep Research",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07055",
+      "title": "Theory of Space: Can Foundation Models Construct Spatial Beliefs through Active Exploration?",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09022",
+      "title": "WorldCompass: Reinforcement Learning for Long-Horizon World Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09084",
+      "title": "Agent Banana: High-Fidelity Image Editing with Agentic Thinking and Tooling",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05940",
+      "title": "Self-Improving Multilingual Long Reasoning via Translation-Reasoning Integrated Training",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.04208",
+      "title": "SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06391",
+      "title": "POINTS-GUI-G: GUI-Grounding Journey",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07075",
+      "title": "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06079",
+      "title": "Canzona: A Unified, Asynchronous, and Load-Balanced Framework for Distributed Matrix-based Optimizers",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05281",
+      "title": "Back to Basics: Revisiting Exploration in Reinforcement Learning for LLM Reasoning via Generative Probabilities",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06075",
+      "title": "MemGUI-Bench: Benchmarking Memory of Mobile GUI Agents in Dynamic Environments",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08658",
+      "title": "Fundamental Reasoning Paradigms Induce Out-of-Domain Generalization in Language Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06454",
+      "title": "RelayGen: Intra-Generation Model Switching for Efficient Reasoning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06139",
+      "title": "EgoAVU: Egocentric Audio-Visual Understanding",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05847",
+      "title": "OmniVideo-R1: Reinforcing Audio-visual Reasoning with Query Intention and Modality Attention",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08847",
+      "title": "Dr. MAS: Stable Reinforcement Learning for Multi-Agent LLM Systems",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06960",
+      "title": "InftyThink+: Effective and Efficient Infinite-Horizon Reasoning via Reinforcement Learning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06820",
+      "title": "ScaleEnv: Scaling Environment Synthesis from Scratch for Generalist Interactive Tool-Use Agent Training",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06694",
+      "title": "NanoQuant: Efficient Sub-1-Bit Quantization of Large Language Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07022",
+      "title": "Condition Errors Refinement in Autoregressive Image Generation with Diffusion Loss",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.10102",
+      "title": "VideoWorld 2: Learning Transferable Knowledge from Real-world Videos",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05711",
+      "title": "OmniMoE: An Efficient MoE by Orchestrating Atomic Experts at Scale",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06176",
+      "title": "Large Language Model Reasoning Failures",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.04649",
+      "title": "Outcome Accuracy is Not Enough: Aligning the Reasoning Process of Reward Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08808",
+      "title": "How2Everything: Mining the Web for How-To Procedures to Evaluate and Improve LLMs",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05367",
+      "title": "RaBiT: Residual-Aware Binarization Training for Accurate and Efficient LLMs",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.04837",
+      "title": "Group-Evolving Agents: Open-Ended Self-Improvement via Experience Sharing",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08145",
+      "title": "Reliable and Responsible Foundation Models: A Comprehensive Survey",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08236",
+      "title": "When and How Much to Imagine: Adaptive Test-Time Scaling with World Models for Visual Spatial Reasoning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07775",
+      "title": "Rolling Sink: Bridging Limited-Horizon Training and Open-Ended Testing in Autoregressive Video Diffusion",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06869",
+      "title": "Uncovering Cross-Objective Interference in Multi-Objective Alignment",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06669",
+      "title": "compar:IA: The French Government's LLM arena to collect French-language human prompts and preference data",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.02581",
+      "title": "QuantLRM: Quantization of Large Reasoning Models via Fine-Tuning Signals",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.10104",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09849",
+      "title": "BagelVLA: Enhancing Long-Horizon Manipulation via Interleaved Vision-Language-Action Generation",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09003",
+      "title": "Data Science and Technology Towards AGI Part I: Tiered Data Management",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07796",
+      "title": "Thinking Makes LLM Agents Introverted: How Mandatory Thinking Can Backfire in User-Engaged Agents",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07153",
+      "title": "ANCHOR: Branch-Point Data Generation for GUI Agents",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06854",
+      "title": "SEMA: Simple yet Effective Learning for Multi-Turn Jailbreak Attacks",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06663",
+      "title": "PlanViz: Evaluating Planning-Oriented Image Generation and Editing for Computer-Use Tasks",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.03075",
+      "title": "ReMiT: RL-Guided Mid-Training for Iterative LLM Evolution",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.10116",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.10098",
+      "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09823",
+      "title": "Covo-Audio Technical Report",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08382",
+      "title": "Dynamic Long Context Reasoning over Compressed Memory via End-to-End Reinforcement Learning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06554",
+      "title": "SeeUPO: Sequence-Level Agentic-RL with Convergence Guarantees",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2601.21363",
+      "title": "Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09024",
+      "title": "Autoregressive Image Generation with Masked Bit Modeling",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08961",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08829",
+      "title": "WildReward: Learning Reward Models from In-the-Wild Human Interactions",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08344",
+      "title": "OPE: Overcoming Information Saturation in Parallel Thinking via Outline-Guided Path Exploration",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06883",
+      "title": "Vision Transformer Finetuning Benefits from Non-Smooth Components",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06471",
+      "title": "Revisiting the Shape Convention of Transformer Language Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06445",
+      "title": "ECO: Energy-Constrained Optimization with Reinforcement Learning for Humanoid Walking",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09782",
+      "title": "Flexible Entropy Control in RLVR with Gradient-Preserving Perspective",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.09439",
+      "title": "Fine-T2I: An Open, Large-Scale, and Diverse Dataset for High-Quality T2I Fine-Tuning",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07803",
+      "title": "SoulX-Singer: Towards High-Quality Zero-Shot Singing Voice Synthesis",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07150",
+      "title": "On Randomness in Agentic Evals",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06964",
+      "title": "Learning a Generative Meta-Model of LLM Activations",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.06724",
+      "title": "Table-as-Search: Formulate Long-Horizon Agentic Information Seeking as Table Completion",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07080",
+      "title": "CodeCircuit: Toward Inferring LLM-Generated Code Correctness via Attribution Graphs",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.05435",
+      "title": "Stable Velocity: A Variance Perspective on Flow Matching",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08503",
+      "title": "Learning Self-Correction in Vision-Language Models via Rollout Augmentation",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.08004",
+      "title": "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.07839",
+      "title": "TodoEvolve: Learning to Architect Agent Planning Systems",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.02827",
+      "title": "Col-Bandit: Zero-Shot Query-Time Pruning for Late-Interaction Retrieval",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.02464",
+      "title": "From Directions to Regions: Decomposing Activations in Language Models via Local Geometry",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    },
+    {
+      "arxiv_id": "2602.01725",
+      "title": "SafePred: A Predictive Guardrail for Computer-Using Agents via World Models",
+      "authors": "作者信息待获取",
+      "summary": "摘要信息待获取 - 点击下方链接查看完整论文"
+    }
+  ]
+}
