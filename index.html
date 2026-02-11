@@ -321,11 +321,14 @@
         let allArchives = [];
         let currentArchive = null;
         let allPapers = [];
+        
+        // 版本号用于破坏缓存
+        const CACHE_VERSION = '20260211-v2';
 
         // 加载存档索引
         async function loadArchives() {
             try {
-                const response = await fetch('archives/index.json');
+                const response = await fetch(`archives/index.json?v=${CACHE_VERSION}`);
                 const data = await response.json();
                 allArchives = data.archives;
                 renderArchiveList();
@@ -369,7 +372,7 @@
         // 加载指定周的存档
         async function loadArchive(week) {
             try {
-                const response = await fetch(`archives/${week}.json`);
+                const response = await fetch(`archives/${week}.json?v=${CACHE_VERSION}`);
                 currentArchive = await response.json();
                 allPapers = currentArchive.papers;
                 
