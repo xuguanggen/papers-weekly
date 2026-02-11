@@ -5,7 +5,8 @@
 ## ✨ 功能特点
 
 - 📅 **日期导航**: 左侧边栏显示所有历史周刊，点击切换查看
-- 📊 **论文数量**: 当前版本包含 **105篇论文** (从原来的80篇升级)
+- 📊 **论文数量**: 当前版本包含 **155篇论文** (arXiv 105篇 + HuggingFace 50篇)
+- 🌐 **多数据源**: 整合 arXiv 和 HuggingFace Papers 的精选论文
 - 🔍 **实时搜索**: 支持按标题、作者、摘要搜索
 - 📱 **响应式设计**: 完美支持手机、平板、电脑
 - 🎨 **精美UI**: 紫色渐变设计，流畅动画效果
@@ -17,8 +18,9 @@ papers-weekly-site/
 ├── index.html              # 主页面
 ├── archives/               # 存档目录
 │   ├── index.json         # 存档索引
-│   ├── 2026-W06.json      # 第6周论文数据
+│   ├── 2026-W06.json      # 第6周论文数据 (155篇)
 │   └── 2026-W07.json      # 第7周论文数据 (示例)
+├── crawl_huggingface.py    # HuggingFace论文爬虫
 ├── weekly_crawler.py       # 每周爬虫脚本
 └── auto_update.sh          # 自动更新脚本
 ```
@@ -29,7 +31,10 @@ papers-weekly-site/
 
 手动更新：
 ```bash
-# 确保 /data/workspace/all_papers.json 已更新
+# 爬取HuggingFace Papers
+python3 crawl_huggingface.py
+
+# 创建存档
 python3 weekly_crawler.py
 ```
 
@@ -114,4 +119,5 @@ crontab -e
 ---
 
 **最后更新**: 2026-02-11  
-**当前版本**: v2.0 (105篇论文 + 日期导航)
+**当前版本**: v2.5 (155篇论文 + 日期导航 + 多数据源)  
+**数据来源**: arXiv, HuggingFace Papers

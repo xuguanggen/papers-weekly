@@ -9,20 +9,25 @@ echo "📅 当前时间: $(date '+%Y-%m-%d %H:%M:%S')"
 
 cd /data/workspace/papers-weekly-site
 
-# 1. 运行爬虫(假设你有爬虫脚本)
-echo "📡 正在爬取最新论文..."
-# python3 /path/to/your/crawler.py
+# 1. 运行爬虫 - arXiv论文
+echo "📡 正在爬取arXiv论文..."
+# python3 /path/to/your/arxiv_crawler.py
 
-# 2. 创建新的周存档
+# 2. 运行爬虫 - HuggingFace Papers
+echo "📡 正在爬取HuggingFace论文..."
+CURRENT_WEEK=$(date +%Y-W%W)
+python3 crawl_huggingface.py
+
+# 3. 创建新的周存档
 echo "📦 创建本周存档..."
 python3 weekly_crawler.py
 
-# 3. 提交到Git
+# 4. 提交到Git
 echo "📝 提交更新..."
 git add archives/
 git commit -m "chore: Update weekly papers archive - $(date '+%Y-W%W')" || true
 
-# 4. 推送到GitHub  
+# 5. 推送到GitHub  
 echo "🌐 推送到GitHub..."
 git push origin master
 
