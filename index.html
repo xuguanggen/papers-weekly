@@ -322,8 +322,8 @@
         let currentArchive = null;
         let allPapers = [];
         
-        // 版本号用于破坏缓存
-        const CACHE_VERSION = '20260211-v2';
+        // 版本号用于破坏缓存 - 使用时间戳确保每次都加载最新数据
+        const CACHE_VERSION = Date.now();
 
         // 加载存档索引
         async function loadArchives() {
@@ -336,11 +336,28 @@
                 // 默认加载最新的存档
                 if (allArchives.length > 0) {
                     loadArchive(allArchives[0].week);
+                } else {
+                    // 没有任何存档数据
+                    document.getElementById('papersGrid').innerHTML = `
+                        <div style="text-align: center; padding: 80px 20px; color: #7f8c8d;">
+                            <div style="font-size: 48px; margin-bottom: 20px;">📭</div>
+                            <h3 style="margin-bottom: 10px; color: #2c3e50;">暂无论文数据</h3>
+                            <p>所有论文数据已清空，等待添加新内容...</p>
+                        </div>
+                    `;
+                    document.getElementById('currentWeek').textContent = '暂无数据';
                 }
             } catch (error) {
                 console.error('加载存档索引失败:', error);
                 document.getElementById('archiveList').innerHTML = 
                     '<div style="padding: 20px; color: #999;">暂无存档</div>';
+                document.getElementById('papersGrid').innerHTML = `
+                    <div style="text-align: center; padding: 80px 20px; color: #e74c3c;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">⚠️</div>
+                        <h3 style="margin-bottom: 10px;">加载失败</h3>
+                        <p>无法加载论文数据，请刷新页面重试</p>
+                    </div>
+                `;
             }
         }
 
