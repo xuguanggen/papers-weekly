@@ -183,6 +183,54 @@
             user-select: none;
         }
 
+        /* 评分标签样式 */
+        .paper-scores {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+            padding-top: 5px;
+        }
+
+        .score-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+            cursor: help;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .score-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .score-game {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .score-efficiency {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .score-llm {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .score-agent {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .score-total {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            font-size: 14px;
+            padding: 4px 12px;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -418,20 +466,44 @@
                 return;
             }
 
-            grid.innerHTML = papers.map((paper, index) => `
-                <div class="paper" style="animation-delay: ${index * 0.05}s">
-                    <div class="paper-number">#${index + 1}</div>
-                    <div class="paper-title">${paper.title}</div>
-                    <div class="paper-authors">
-                        <strong>👥 作者:</strong> ${paper.authors}
+            grid.innerHTML = papers.map((paper, index) => {
+                // 使用排名作为序号（如果有），否则使用索引
+                const paperNum = paper.rank || (index + 1);
+                
+                // 优先使用中文摘要
+                const abstract = paper.abstract_zh || paper.abstract || paper.summary || '暂无摘要';
+                
+                // 构建评分标签HTML（如果有评分数据）
+                let scoresHTML = '';
+                if (paper.scores) {
+                    const s = paper.scores;
+                    scoresHTML = `
+                        <div class="paper-scores">
+                            <span class="score-badge score-game" title="游戏相关度">🎮 ${s.game}</span>
+                            <span class="score-badge score-efficiency" title="工程提效相关度">⚡ ${s.efficiency}</span>
+                            <span class="score-badge score-llm" title="LLM相关度">🤖 ${s.llm}</span>
+                            <span class="score-badge score-agent" title="Agent相关度">🎯 ${s.agent}</span>
+                            <span class="score-badge score-total" title="综合得分">💯 ${s.total}</span>
+                        </div>
+                    `;
+                }
+                
+                return `
+                    <div class="paper" style="animation-delay: ${index * 0.05}s">
+                        <div class="paper-number">#${paperNum}</div>
+                        ${scoresHTML}
+                        <div class="paper-title">${paper.title}</div>
+                        <div class="paper-authors">
+                            <strong>👥 作者:</strong> ${paper.authors}
+                        </div>
+                        <div class="summary-label">📄 摘要</div>
+                        <div class="summary-text">${abstract}</div>
+                        <a href="${paper.url}" target="_blank" class="paper-link">
+                            查看论文原文 →
+                        </a>
                     </div>
-                    <div class="summary-label">📄 摘要</div>
-                    <div class="summary-text">${paper.summary}</div>
-                    <a href="${paper.url}" target="_blank" class="paper-link">
-                        查看论文原文 →
-                    </a>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
 
         // 搜索功能
