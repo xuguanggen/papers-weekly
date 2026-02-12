@@ -104,19 +104,34 @@ def process_papers(raw_papers):
         # 分析相关度
         scores = analyze_paper_relevance(title, abstract)
         
+        # 正确提取作者信息 - 从 paper.authors 中获取
+        paper_obj = paper.get('paper', {})
+        authors_list = paper_obj.get('authors', [])
+        if authors_list:
+            # 提取作者姓名
+            authors = ', '.join([a.get('name', '') for a in authors_list[:5] if a.get('name')])
+        else:
+            authors = '作者信息待获取'
+        
+        # 正确提取arXiv ID - 从 paper.id 中获取
+        arxiv_id = paper_obj.get('id', '')
+        if arxiv_id:
+            url = f"https://arxiv.org/abs/{arxiv_id}"
+        else:
+            # 备用方案：尝试从其他字段获取
+            url = paper.get('arxivId', '')
+            if url and not url.startswith('http'):
+                url = f"https://arxiv.org/abs/{url}"
+        
         processed_paper = {
             'title': title,
-            'authors': ', '.join([a['name'] for a in paper.get('authors', [])[:5]]),
+            'authors': authors,
             'abstract': abstract,  # 英文摘要，稍后翻译
             'abstract_zh': '',  # 待翻译
-            'url': paper.get('arxivId', ''),
+            'url': url,
             'publishedAt': paper.get('publishedAt', ''),
             'scores': scores
         }
-        
-        # 处理arXiv链接
-        if processed_paper['url'] and not processed_paper['url'].startswith('http'):
-            processed_paper['url'] = f"https://arxiv.org/abs/{processed_paper['url']}"
         
         processed.append(processed_paper)
         time.sleep(0.1)  # 避免过快
