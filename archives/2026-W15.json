@@ -439,24 +439,6 @@
     },
     {
       "rank": 25,
-      "title": "Do Audio-Visual Large Language Models Really See and Hear?",
-      "authors": "Ramaneswaran Selvakumar, Kaousheik Jayakumar, S Sakshi 等 6 人",
-      "url": "https://arxiv.org/abs/2604.02605",
-      "hf_url": "https://huggingface.co/papers/2604.02605",
-      "summary": "Audio-Visual Large Language Models (AVLLMs) are emerging as unified interfaces to multimodal perception. We present the first mechanistic interpretability study of AVLLMs, analyzing how audio and visual features evolve and fuse through different layers of an AVLLM to produce the final text outputs. ...",
-      "abstract": "Audio-Visual Large Language Models (AVLLMs) are emerging as unified interfaces to multimodal perception. We present the first mechanistic interpretability study of AVLLMs, analyzing how audio and visual features evolve and fuse through different layers of an AVLLM to produce the final text outputs. We find that although AVLLMs encode rich audio semantics at intermediate layers, these capabilities largely fail to surface in the final text generation when audio conflicts with vision. Probing analyses show that useful latent audio information is present, but deeper fusion layers disproportionately privilege visual representations that tend to suppress audio cues. We further trace this imbalance to training: the AVLLM's audio behavior strongly matches its vision-language base model, indicating limited additional alignment to audio supervision. Our findings reveal a fundamental modality bias in AVLLMs and provide new mechanistic insights into how multimodal LLMs integrate audio and vision.",
-      "abstract_zh": "Audio-Visual Large Language Models (AVLLMs) are emerging as unified interfaces to multimodal perception. We present the first mechanistic interpretability study of AVLLMs, analyzing how audio and visual features evolve and fuse through different layers of an AVLLM to produce the final text outputs. We find that although AVLLMs encode rich audio semantics at intermediate layers, these capabilities largely fail to surface in the final text generation when audio conflicts with vision. Probing analyses show that useful latent audio information is present, but deeper fusion layers disproportionately privilege visual representations that tend to suppress audio cues. We further trace this imbalance to training: the AVLLM's audio behavior strongly matches its vision-language base model, indicating limited additional alignment to audio supervision. Our findings reveal a fundamental modality bias in AVLLMs and provide new mechanistic insights into how multimodal LLMs integrate audio and vision.",
-      "scores": {
-        "game": 0,
-        "efficiency": 0,
-        "llm": 100,
-        "agent": 0,
-        "total": 26.0
-      },
-      "categories": []
-    },
-    {
-      "rank": 26,
       "title": "Locally Confident, Globally Stuck: The Quality-Exploration Dilemma in Diffusion Language Models",
       "authors": "Liancheng Fang, Aiwei Liu, Henry Peng Zou 等 10 人",
       "url": "https://arxiv.org/abs/2604.00375",
@@ -474,7 +456,7 @@
       "categories": []
     },
     {
-      "rank": 27,
+      "rank": 26,
       "title": "Vero: An Open RL Recipe for General Visual Reasoning",
       "authors": "Gabriel Sarch, Linrong Cai, Qunzhong Wang 等 6 人",
       "url": "https://arxiv.org/abs/2604.04917",
@@ -492,7 +474,7 @@
       "categories": []
     },
     {
-      "rank": 28,
+      "rank": 27,
       "title": "Can LLMs Learn to Reason Robustly under Noisy Supervision?",
       "authors": "Shenzhi Yang, Guangcheng Zhu, Bowen Song 等 10 人",
       "url": "https://arxiv.org/abs/2604.03993",
@@ -510,7 +492,7 @@
       "categories": []
     },
     {
-      "rank": 29,
+      "rank": 28,
       "title": "Xpertbench: Expert Level Tasks with Rubrics-Based Evaluation",
       "authors": "Xue Liu, Xin Ma, Yuxin Ma 等 31 人",
       "url": "https://arxiv.org/abs/2604.02368",
@@ -528,7 +510,7 @@
       "categories": []
     },
     {
-      "rank": 30,
+      "rank": 29,
       "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
       "authors": "Jian Yang, Wei Zhang, Jiajun Wu 等 25 人",
       "url": "https://arxiv.org/abs/2604.03144",
@@ -546,7 +528,7 @@
       "categories": []
     },
     {
-      "rank": 31,
+      "rank": 30,
       "title": "FileGram: Grounding Agent Personalization in File-System Behavioral Traces",
       "authors": "Shuai Liu, Shulin Tian, Kairui Hu 等 9 人",
       "url": "https://arxiv.org/abs/2604.04901",
@@ -564,7 +546,7 @@
       "categories": []
     },
     {
-      "rank": 32,
+      "rank": 31,
       "title": "ONE-SHOT: Compositional Human-Environment Video Synthesis via Spatial-Decoupled Motion Injection and Hybrid Context Integration",
       "authors": "Fengyuan Yang, Luying Huang, Jiazhi Guan 等 11 人",
       "url": "https://arxiv.org/abs/2604.01043",
@@ -582,7 +564,7 @@
       "categories": []
     },
     {
-      "rank": 33,
+      "rank": 32,
       "title": "Your Agent, Their Asset: A Real-World Safety Analysis of OpenClaw",
       "authors": "Zijun Wang, Haoqin Tu, Letian Zhang 等 14 人",
       "url": "https://arxiv.org/abs/2604.04759",
@@ -600,7 +582,7 @@
       "categories": []
     },
     {
-      "rank": 34,
+      "rank": 33,
       "title": "Communicating about Space: Language-Mediated Spatial Integration Across Partial Views",
       "authors": "Ankur Sikarwar, Debangan Mishra, Sudarshan Nikhil 等 5 人",
       "url": "https://arxiv.org/abs/2603.27183",
@@ -618,7 +600,7 @@
       "categories": []
     },
     {
-      "rank": 35,
+      "rank": 34,
       "title": "VLMs Need Words: Vision Language Models Ignore Visual Detail In Favor of Semantic Anchors",
       "authors": "Haz Sameen Shahgir, Xiaofu Chen, Yu Fu 等 7 人",
       "url": "https://arxiv.org/abs/2604.02486",
@@ -636,7 +618,7 @@
       "categories": []
     },
     {
-      "rank": 36,
+      "rank": 35,
       "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
       "authors": "Nicholas Roberts, Sungjun Cho, Zhiqi Gao 等 10 人",
       "url": "https://arxiv.org/abs/2604.01411",
@@ -654,7 +636,7 @@
       "categories": []
     },
     {
-      "rank": 37,
+      "rank": 36,
       "title": "Salt: Self-Consistent Distribution Matching with Cache-Aware Training for Fast Video Generation",
       "authors": "Xingtong Ge, Yi Zhang, Yushi Huang 等 9 人",
       "url": "https://arxiv.org/abs/2604.03118",
@@ -662,6 +644,24 @@
       "summary": "Distilling video generation models to extremely low inference budgets (e.g., 2--4 NFEs) is crucial for real-time deployment, yet remains challenging. Trajectory-style consistency distillation often becomes conservative under complex video dynamics, yielding an over-smoothed appearance and weak motio...",
       "abstract": "Distilling video generation models to extremely low inference budgets (e.g., 2--4 NFEs) is crucial for real-time deployment, yet remains challenging. Trajectory-style consistency distillation often becomes conservative under complex video dynamics, yielding an over-smoothed appearance and weak motion. Distribution matching distillation (DMD) can recover sharp, mode-seeking samples, but its local training signals do not explicitly regularize how denoising updates compose across timesteps, making composed rollouts prone to drift. To overcome this challenge, we propose Self-Consistent Distribution Matching Distillation (SC-DMD), which explicitly regularizes the endpoint-consistent composition of consecutive denoising updates. For real-time autoregressive video generation, we further treat the KV cache as a quality parameterized condition and propose Cache-Distribution-Aware training. This training scheme applies SC-DMD over multi-step rollouts and introduces a cache-conditioned feature alignment objective that steers low-quality outputs toward high-quality references. Across extensive experiments on both non-autoregressive backbones (e.g., Wan~2.1) and autoregressive real-time paradigms (e.g., Self Forcing), our method, dubbed Salt, consistently improves low-NFE video generation quality while remaining compatible with diverse KV-cache memory mechanisms. Source code will be released at https://github.com/XingtongGe/Salt{https://github.com/XingtongGe/Salt}.",
       "abstract_zh": "Distilling video generation models to extremely low inference budgets (e.g., 2--4 NFEs) is crucial for real-time deployment, yet remains challenging. Trajectory-style consistency distillation often becomes conservative under complex video dynamics, yielding an over-smoothed appearance and weak motion. Distribution matching distillation (DMD) can recover sharp, mode-seeking samples, but its local training signals do not explicitly regularize how denoising updates compose across timesteps, making composed rollouts prone to drift. To overcome this challenge, we propose Self-Consistent Distribution Matching Distillation (SC-DMD), which explicitly regularizes the endpoint-consistent composition of consecutive denoising updates. For real-time autoregressive video generation, we further treat the KV cache as a quality parameterized condition and propose Cache-Distribution-Aware training. This training scheme applies SC-DMD over multi-step rollouts and introduces a cache-conditioned feature alignment objective that steers low-quality outputs toward high-quality references. Across extensive experiments on both non-autoregressive backbones (e.g., Wan~2.1) and autoregressive real-time paradigms (e.g., Self Forcing), our method, dubbed Salt, consistently improves low-NFE video generation quality while remaining compatible with diverse KV-cache memory mechanisms. Source code will be released at https://github.com/XingtongGe/Salt{https://github.com/XingtongGe/Salt}.",
+      "scores": {
+        "game": 0,
+        "efficiency": 10,
+        "llm": 70,
+        "agent": 0,
+        "total": 21.2
+      },
+      "categories": []
+    },
+    {
+      "rank": 37,
+      "title": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive Video Understanding",
+      "authors": "Chaoyou Fu, Haozhi Yuan, Yuhao Dong 等 19 人",
+      "url": "https://arxiv.org/abs/2604.05015",
+      "hf_url": "https://huggingface.co/papers/2604.05015",
+      "summary": "With the rapid advancement of video understanding, existing benchmarks are becoming increasingly saturated, exposing a critical discrepancy between inflated leaderboard scores and real-world model capabilities. To address this widening gap, we introduce Video-MME-v2, a comprehensive benchmark design...",
+      "abstract": "With the rapid advancement of video understanding, existing benchmarks are becoming increasingly saturated, exposing a critical discrepancy between inflated leaderboard scores and real-world model capabilities. To address this widening gap, we introduce Video-MME-v2, a comprehensive benchmark designed to rigorously evaluate the robustness and faithfulness of video understanding. To systematically evaluate model capabilities, we design a progressive tri-level hierarchy that incrementally increases the complexity of video comprehension, ranging from multi-point visual information aggregation, to temporal dynamics modeling, and ultimately to complex multimodal reasoning. Besides, in contrast to conventional per-question accuracy, we propose a group-based non-linear evaluation strategy that enforces both consistency across related queries and coherence in multi-step reasoning. It penalizes fragmented or guess-based correctness and assigns credit only to answers supported by valid reasoning. To guarantee data quality, Video-MME-v2 is constructed through a rigorously controlled human annotation pipeline, involving 12 annotators and 50 independent reviewers. Backed by 3,300 human-hours and up to 5 rounds of quality assurance, Video-MME-v2 aims to serve as one of the most authoritative video benchmarks. Extensive experiments reveal a substantial gap between current best model Gemini-3-Pro and human experts, and uncover a clear hierarchical bottleneck where errors in visual information aggregation and temporal modeling propagate to limit high-level reasoning. We further find that thinking-based reasoning is highly dependent on textual cues, improving performance with subtitles but sometimes degrading it in purely visual settings. By exposing these limitations, Video-MME-v2 establishes a demanding new testbed for the development of next-generation video MLLMs.",
+      "abstract_zh": "With the rapid advancement of video understanding, existing benchmarks are becoming increasingly saturated, exposing a critical discrepancy between inflated leaderboard scores and real-world model capabilities. To address this widening gap, we introduce Video-MME-v2, a comprehensive benchmark designed to rigorously evaluate the robustness and faithfulness of video understanding. To systematically evaluate model capabilities, we design a progressive tri-level hierarchy that incrementally increases the complexity of video comprehension, ranging from multi-point visual information aggregation, to temporal dynamics modeling, and ultimately to complex multimodal reasoning. Besides, in contrast to conventional per-question accuracy, we propose a group-based non-linear evaluation strategy that enforces both consistency across related queries and coherence in multi-step reasoning. It penalizes fragmented or guess-based correctness and assigns credit only to answers supported by valid reasoning. To guarantee data quality, Video-MME-v2 is constructed through a rigorously controlled human annotation pipeline, involving 12 annotators and 50 independent reviewers. Backed by 3,300 human-hours and up to 5 rounds of quality assurance, Video-MME-v2 aims to serve as one of the most authoritative video benchmarks. Extensive experiments reveal a substantial gap between current best model Gemini-3-Pro and human experts, and uncover a clear hierarchical bottleneck where errors in visual information aggregation and temporal modeling propagate to limit high-level reasoning. We further find that thinking-based reasoning is highly dependent on textual cues, improving performance with subtitles but sometimes degrading it in purely visual settings. By exposing these limitations, Video-MME-v2 establishes a demanding new testbed for the development of next-generation video MLLMs.",
       "scores": {
         "game": 0,
         "efficiency": 10,
