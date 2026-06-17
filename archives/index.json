@@ -1,7 +1,12 @@
 {
-  "last_updated": "2026-06-10",
-  "total_archives": 17,
+  "last_updated": "2026-06-17",
+  "total_archives": 18,
   "archives": [
+    {
+      "week": "2026-W25",
+      "date": "2026-06-17",
+      "count": 50
+    },
     {
       "week": "2026-W24",
       "date": "2026-06-10",
